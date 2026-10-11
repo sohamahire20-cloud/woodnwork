@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launch Verification & Pre-Flight Blueprint — Wood N Work</title>
+  <meta name="description" content="Client handover and pre-flight verification blueprint for Wood N Work website launch. Checklist covering SSL domain resolution, phone confirmation, and content production.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="site-container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Wood N Work Home">
+        <img src="images/logo.svg" alt="Wood N Work" width="220" height="44">
+      </a>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="kitchens.html" class="nav-link">Kitchens</a></li>
+          <li><a href="custom-furniture.html" class="nav-link">Custom Furniture</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+          <li><a href="get-in-touch.html" class="nav-link">Get in Touch</a></li>
+        </ul>
+        <div class="mobile-drawer-cta">
+          <a href="index.html" class="btn btn-secondary" style="width:100%; text-align:center;">Return to Showcase</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary">← Back to Website</a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="page-hero" aria-labelledby="guide-title">
+      <div class="site-container">
+        <div class="page-hero-inner">
+          <span class="eyebrow">Client Handover & Pre-Flight Protocol</span>
+          <h1 id="guide-title">Launch Acceptance & Verification Guide</h1>
+          <p>
+            This document outlines the verified items, required client sign-offs, technical domain fixes, and content production milestones required before Wood N Work’s digital showroom goes live.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST AND AUDIT SECTIONS -->
+    <section class="section-spacing" aria-label="Pre-flight audit items">
+      <div class="site-container-narrow">
+
+        <!-- 01. CRITICAL DOMAIN ISSUE -->
+        <article style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; margin-bottom:2.5rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge pending" style="background:var(--color-notice-bg); color:var(--color-notice); border-color:var(--color-notice-border);">Urgent Action Required</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 02 & 15 Finding</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            1. Domain SSL Certificate Date Error (`woodnwork.in`)
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            <strong>Investigation Finding:</strong> Opening <code>woodnwork.in</code> returned an SSL certificate-date / expiration error in browser security checks. Visitors attempting to open the URL encounter a full-screen browser security warning block.
+          </p>
+
+          <div style="background:var(--bg-secondary); border-left:3px solid var(--color-notice); padding:1rem 1.25rem; border-radius:3px; margin:1.25rem 0;">
+            <h5 style="color:var(--color-notice); margin-bottom:0.35rem; font-size:0.9rem;">Resolution Steps for Domain Owner:</h5>
+            <ol style="margin-left:1.25rem; font-size:0.88rem; color:var(--color-charcoal-700); line-height:1.6;">
+              <li>Log into the domain registrar / DNS management console (e.g. GoDaddy, Namecheap, Cloudflare).</li>
+              <li>Renew the TLS/SSL certificate or re-issue an automated Let's Encrypt / Cloudflare Universal SSL certificate.</li>
+              <li>Verify HTTPS enforcement and HTTP-to-HTTPS 301 redirection on the production server.</li>
+            </ol>
+          </div>
+          <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.88rem; font-weight:600; cursor:pointer;">
+            <input type="checkbox" id="guide-chk-ssl" class="checklist-checkbox" style="accent-color:var(--color-walnut-900);">
+            Mark as Resolved: SSL Certificate Renewed & Verified
+          </label>
+        </article>
+
+        <!-- 02. PHONE & CONTACT VERIFICATION -->
+        <article style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; margin-bottom:2.5rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge pending">Client Confirmation Needed</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 02 Contact Audit</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            2. Telephone & WhatsApp Confirmation (+91 9090 9999 16)
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            <strong>Investigation Finding:</strong> The Instagram bio lists <code>+91 9090 9999 16</code>. Per brief guidelines: <em>“confirm the number with the business before using it in clickable phone or WhatsApp links... Do not activate phone or WhatsApp links until the business confirms the number.”</em>
+          </p>
+          <div style="background:var(--bg-secondary); padding:1rem 1.25rem; border-radius:3px; margin:1.25rem 0;">
+            <h5 style="margin-bottom:0.35rem; font-size:0.9rem;">Current Prototype Implementation:</h5>
+            <p style="font-size:0.88rem; color:var(--color-charcoal-700); margin:0;">
+              The number is presented transparently with an explanatory disclaimer pill. Direct click-to-call links are guarded, and WhatsApp actions prompt a confirmation modal until client sign-off is logged.
+            </p>
+          </div>
+          <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.88rem; font-weight:600; cursor:pointer;">
+            <input type="checkbox" id="guide-chk-phone" class="checklist-checkbox" style="accent-color:var(--color-walnut-900);">
+            Mark as Confirmed: Business has verified +91 9090 9999 16 as official contact
+          </label>
+        </article>
+
+        <!-- 03. TIMBER HERITAGE POSITIONING -->
+        <article style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; margin-bottom:2.5rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge verified">Editorial Standard Enforced</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 01 Positioning</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            3. "35+ Years Experience" Heritage Phrasing
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            <strong>Instruction:</strong> <em>“Describe that as experience in timber or plywood unless the business confirms the exact history. Do not imply that Wood N Work’s modular-furniture brand has existed for 35 years.”</em>
+          </p>
+          <div style="background:var(--color-verified-bg); border:1px solid var(--color-verified-border); padding:1rem 1.25rem; border-radius:3px; margin:1.25rem 0; font-size:0.88rem; color:var(--color-verified);">
+            ✓ <strong>Verified Implementation:</strong> All site pages describe this as “35+ years of family timber and plywood knowledge” and explicitly position Wood N Work as the modern factory-direct bespoke modular brand in Nashik.
+          </div>
+        </article>
+
+        <!-- 04. PHOTOGRAPHY SHOOT LIST -->
+        <article id="photography" style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; margin-bottom:2.5rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge concept">Production Milestones</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 12 Blueprint Targets</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            4. Content & Photography Production Handover
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            Per the blueprint specifications, the staging site maintains strict truth in advertising: design prototypes are labelled as concept staging assets. Upon shoot completion, the staging assets will be replaced with genuine high-resolution client photography.
+          </p>
+
+          <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:1.25rem 0;">
+            <div style="background:var(--bg-secondary); padding:1rem; border-radius:3px;">
+              <strong style="font-size:0.85rem; color:var(--color-walnut-900);">Shoot Targets (Section 12):</strong>
+              <ul style="margin:0.5rem 0 0 1.2rem; font-size:0.82rem; color:var(--color-charcoal-700); line-height:1.5;">
+                <li>3 Completed residential projects</li>
+                <li>25–40 Edited architectural photographs</li>
+                <li>8–12 Physical material sample swatches</li>
+                <li>Nashik workshop & team portrait</li>
+              </ul>
+            </div>
+            <div style="background:var(--bg-secondary); padding:1rem; border-radius:3px;">
+              <strong style="font-size:0.85rem; color:var(--color-walnut-900);">Photographic Styling:</strong>
+              <ul style="margin:0.5rem 0 0 1.2rem; font-size:0.82rem; color:var(--color-charcoal-700); line-height:1.5;">
+                <li>Natural architectural lighting</li>
+                <li>Honest close-ups of mitred joinery & grain</li>
+                <li>Clean, uncluttered spatial context</li>
+                <li>Authentic residential scale in Nashik</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Visual Staging Benchmarks Grid -->
+          <div style="margin-top:1.5rem; border-top:1px dashed var(--border-medium); padding-top:1.25rem;">
+            <h5 style="margin-bottom:0.75rem; font-size:0.88rem; color:var(--color-walnut-950); text-transform:uppercase; letter-spacing:0.06em;">Visual Aesthetic Benchmarks (Staging Prototypes)</h5>
+            <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:0.75rem;">
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/hero-kitchen.jpg" alt="Kitchen Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">Kitchen Benchmark</div>
+              </div>
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/luxury-wardrobe.jpg" alt="Wardrobe Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">Wardrobe Benchmark</div>
+              </div>
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/media-credenza.jpg" alt="Living Joinery Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">Living Joinery Benchmark</div>
+              </div>
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/timber-workshop.jpg" alt="Workshop Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">Workshop Benchmark</div>
+              </div>
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/ushape-kitchen.jpg" alt="U-Shape Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">U-Shape Benchmark</div>
+              </div>
+              <div style="border:1px solid var(--border-medium); border-radius:3px; overflow:hidden;">
+                <img src="images/bar-cabinet.jpg" alt="Bar Unit Benchmark" style="width:100%; height:110px; object-fit:cover;">
+                <div style="padding:0.4rem; font-size:0.72rem; background:var(--bg-secondary); text-align:center;">Bar Unit Benchmark</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05. BUSINESS UNCONFIRMED FACTS -->
+        <article style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; margin-bottom:2.5rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge pending">Information Needed</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 02 Gaps</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            5. Business Specifications to Confirm with Wood N Work
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            The website does not guess or invent unverified claims. The following items require formal client sign-off:
+          </p>
+
+          <table style="width:100%; border-collapse:collapse; margin-top:1rem; font-size:0.88rem; text-align:left;">
+            <thead>
+              <tr style="border-bottom:2px solid var(--border-medium); background:var(--bg-secondary);">
+                <th style="padding:0.75rem;">Business Item</th>
+                <th style="padding:0.75rem;">Current Staging Representation</th>
+                <th style="padding:0.75rem;">Client Action Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:0.75rem; font-weight:600;">Hardware Partners</td>
+                <td style="padding:0.75rem;">Labelled as "Pending Confirmation"</td>
+                <td style="padding:0.75rem;">Confirm whether Blum, Hettich, or Hafele is primary partner</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:0.75rem; font-weight:600;">Warranty Duration</td>
+                <td style="padding:0.75rem;">No unconfirmed warranty years claimed</td>
+                <td style="padding:0.75rem;">Provide formal warranty term (e.g., 5 or 10 years on carcass)</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:0.75rem; font-weight:600;">Physical Address</td>
+                <td style="padding:0.75rem;">"Nashik, Maharashtra"</td>
+                <td style="padding:0.75rem;">Supply exact workshop / studio street address for maps</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:0.75rem; font-weight:600;">Service Territory</td>
+                <td style="padding:0.75rem;">Nashik core, select outstation evaluated</td>
+                <td style="padding:0.75rem;">Confirm whether Mumbai/Pune delivery is offered</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- 06. ENQUIRY INTEGRATION & DISPATCH -->
+        <article style="background:var(--bg-card); border:1px solid var(--border-medium); border-radius:var(--radius-sm); padding:2.25rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <span class="status-badge verified">Ready for Webhook / CRM</span>
+            <span style="font-size:0.82rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Section 10 CRM Handover</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--color-walnut-950);">
+            6. Enquiry Dispatch & CRM Connection Guide
+          </h3>
+          <p style="color:var(--color-charcoal-700); font-size:0.95rem;">
+            The enquiry form on <code>get-in-touch.html</code> is fully wired with 2-step client validation, localStorage payload saving, and payload copy facilities. To connect to live dispatch at launch:
+          </p>
+          <pre style="background:var(--color-walnut-950); color:var(--color-brass-400); padding:1rem; border-radius:4px; font-size:0.82rem; overflow-x:auto; margin:1rem 0;"><code>// In js/enquiry.js:
+// Replace the staging review display with your live endpoint:
+fetch('https://api.woodnwork.in/enquiries' /* or Formspree endpoint */, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload)
+});</code></pre>
+        </article>
+
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="index.html" class="btn btn-primary">Return to Digital Showroom</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom" style="border:none; padding:0;">
+        <div>© 2026 Wood N Work • Bespoke Modular Creations. Launch Acceptance Blueprint.</div>
+        <a href="index.html" style="color:var(--color-brass-400);">Back to Showcase</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
